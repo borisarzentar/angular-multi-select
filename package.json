@@ -18,5 +18,13 @@
     "bugs": {
         "url": "https://github.com/isteven/angular-multi-select/issues"
     },
-    "homepage": "https://github.com/isteven/angular-multi-select"
+    "homepage": "https://github.com/isteven/angular-multi-select",
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "load-grunt-tasks": "^3.1.0",
+        "grunt-contrib-connect": "^0.9.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "jshint-stylish": "^1.0.0",
+        "grunt-contrib-jshint": "^0.11.0"
+    }
 }

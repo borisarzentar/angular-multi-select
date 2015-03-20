@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="isteven-multi-select.css">
+</head>
+
+<body ng-app="multiSelect" ng-controller="testCtrl">
+    <div isteven-multi-select input-model="modernBrowsers" output-model="outputBrowsers" button-label="name" item-label="name maker" tick-property="ticked"></div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="isteven-multi-select.js"></script>
+    <script type="text/javascript">
+    angular.module('multiSelect', ['isteven-multi-select']);
+
+    angular.module('multiSelect').controller('testCtrl', function($scope) {
+        $scope.modernBrowsers = [{
+            name: "Opera",
+            maker: "(Opera Software)",
+            ticked: true
+        }, {
+            name: "Internet Explorer",
+            maker: "(Microsoft)",
+            ticked: false
+        }, {
+            name: "Firefox",
+            maker: "(Mozilla Foundation)",
+            ticked: true
+        }, {
+            name: "Safari",
+            maker: "(Apple)",
+            ticked: false
+        }, {
+            name: "Chrome",
+            maker: "(Google)",
+            ticked: true
+        }];
+    });
+    </script>
+</body>
+
+</html>
